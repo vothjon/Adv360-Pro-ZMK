@@ -48,11 +48,11 @@
 
         gaming {
             bindings = <
-&kp ESCAPE  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp CAPS    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LCTRL   &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&kp ESCAPE  &trans  &trans  &trans  &trans  &trans  &trans                                         &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans  &trans  &trans  &trans  &trans  &trans                                         &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp CAPS    &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans  &trans  &trans  &trans  &trans                     &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LCTRL   &trans  &trans  &trans  &trans          &kp SPACE  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
