@@ -19,6 +19,15 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+
+        tilde: tilde {
+            compatible = "zmk,behavior-mod-morph";
+            label = "TILDE";
+            bindings = <&kp ESCAPE>, <&kp TILDE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     keymap {
@@ -27,7 +36,7 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL     &kp N1     &kp N2          &kp N3       &kp N4            &kp N5  &mo 3                                                    &mo 3      &kp N6  &kp N7             &kp N8       &kp N9           &kp N0           &kp MINUS
+&tilde        &kp N1     &kp N2          &kp N3       &kp N4            &kp N5  &mo 3                                                    &mo 3      &kp N6  &kp N7             &kp N8       &kp N9           &kp N0           &kp MINUS
 &kp TAB       &kp Q      &kp W           &kp E        &kp R             &kp T   &none                                                    &none      &kp Y   &kp U              &kp I        &kp O            &kp P            &kp BSLH
 &kp ESC       &lt 2 A    &hm LEFT_ALT S  &hm LCTRL D  &hm LEFT_SHIFT F  &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &hm RIGHT_SHIFT J  &hm RCTRL K  &hm RIGHT_ALT L  &lt 2 SEMICOLON  &kp SQT
 &kp LSHFT     &kp Z      &kp X           &kp C        &kp V             &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp M              &kp COMMA    &kp DOT          &kp FSLH         &mt RSHFT CAPSLOCK
